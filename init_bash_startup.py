@@ -91,7 +91,7 @@ def ensure_file_not_exists(path_to_file: Union[str, Path]) -> None:
     """
     if exists(path_to_file):
         raise FileExistsError(
-            f'File {path_to_file} exists. Try to specify an append mode or just delete it'
+            f'File {path_to_file} exists. Try to specify the append mode or just delete it'
         )
 
 
